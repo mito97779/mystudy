@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/*大元の部分*/
+body{
+    font-family: 'Hiragino Kaku Gothic Pro','Meiryo',sans-serif;
+    font-size: 15px;
+    border-top: 10px solid rgb(139, 197, 255);
+}
+/*URLのリンクについて*/
+a{
+    text-decoration: none;
+}
+/*記事の大元サイズ*/
+.W_inner{
+    width: 400px;
+    margin: auto;
+}
+
+
+/*
+*headerのナビゲーションリストの設定箇所
+*
+*/
+.header nav ul{
+    display: flex;
+}
+.header nav ul li{
+    width:80px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+
+}
+.header nav ul li:first-child{
+    border-left: 1px solid #ddd;
+}
+.header nav ul li a{
+    display: block;
+    color: black;
+}
+/*headerのロゴ部分*/
+.logo{
+    text-align: center;
+    margin: 30px;
+}
+/*headerのロゴ画像について*/
+.logo img{
+    width: 100px;
+    height: auto;
+}
+
+
+/*
+*container(メイン部分)の設定
+*
+**/
+.container{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*大見出し*/
+.container h2{
+    font-size: 40px;
+    color: red;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight:bolder;
+}
+
+/* 
+*テーブルの設定
+*/
+.container table{
+    text-align: center;
+    border-collapse: collapse;
+}
+/*小見出し*/
+.container table th{
+    font-size: large;
+    padding: 10px;
+    border: solid 2px ;
+    background-color: rgb(89, 221, 89);
+}
+.container table td{
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+
+/**
+*fotter(一番下の部分）の設定
+*/
+.fotter{
+    margin-top: 40px;
+}
+.copy{
+    text-align: center;
+    background-color: rgb(139, 197, 255);
+    color:white;
+    font-size: 12px;
+}

@@ -3,42 +3,82 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, initial-scal1.0">
-        <link rel="stylesheet" href="./style.css">
+        <meta name="viewport" content="width=device-width, initial-scal=1.0">
         <title>トップページ</title>
+        <meta name="discription" content="自分が勉強するためだけのホームページ">
+        <link href="css/reset.css"rel="stylesheet" type="text/css" >
+        <link rel="stylesheet" href="./css/style.css" type="text/css">
     </head>
     <body>
-        <header>
-             <h1>僕の勉強ホームページ</h1>
-             <nav>
-                グローバルナビゲーション
+        <header class="header W_inner">
+            <div class=logo>
+                <img src="./img/logo.png""logo">
+                <h1>僕の勉強ページ</h1>
+                <p style="color: red;">[注意]<br>
+                    サイトはiPhoneXRの大きさで設定されています
+                </p>         
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">トップ</a></li>
+                    <li><a href="#fe">基本情報</a></li>
+                    <li><a href="#ap">応用情報</a></li>
+                    <li><a href="#en">英語</a></li>
+                    <li><a href="#kr">韓国語</a></li>
+                </ul>
             </nav>
         </header>
 
-        <main>
+        <main class="container ">
+            <article class="main_arti">
+                <h2 id="fe">基本情報技術者試験</h2>
+                <table class="table W_inner">
+                    <thead>
+                        <tr>
+                            <th>テクノロジ系</th>
+                            <th>マネジメント系</th>
+                            <th>ストラテジ系</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="./基本情報/Foundation/1.html">第１章 <br>基礎理論</a></td>
+                            <td><a href="./基本情報/PM/5.html">第５章 <br>プロジェクトマネジメント</a></td>
+                            <td><a href="./基本情報/System_str/7.html">第７章 <br>システム戦略</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="./基本情報/PCsystem/2.html">第２章 <br>コンピュータシステム</a></td>
+                            <td><a href="./基本情報/SM/6.html">第６章 <br>サービスマネジメント</a></td>
+                            <td><a href="./基本情報/Management_str/8.html">第８章 <br>経営戦略</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="./基本情報/Tecnical_ele/3.html">第３章 <br>技術要素</a></td>
+                            <td></td>
+                            <td><a href="./基本情報/C_and_L/9.html">第９章 <br>企業と法務</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="./基本情報/Development/4.html">第４章 <br>開発技術</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
             <article>
-                <h1>基本情報技術者試験</h1>
-                <h2 class="css1">テクノロジ系</h2>
-                <a href="./基本情報/Foundation/1.html">第１章 基礎理論<br></a>
-                <a href="./基本情報/PCsystem/2.html">第２章 コンピュータシステム<br></a>
-                <a href="./基本情報/Tecnical_ele/3.html">第３章 技術要素<br></a>
-                <a href="./基本情報/Development/4.html">第４章 開発技術<br></a>
-                <h2>マネジメント系</h2>
-                <a href="./基本情報/PM/5.html">第５章 プロジェクトマネジメント<br></a>
-                <a href="./基本情報/SM/6.html">第６章 サービスマネジメント<br></a>
-                <h2>ストラテジ系</h2>
-                <a href="./基本情報/System_str/7.html">第７章 システム戦略<br></a>
-                <a href="./基本情報/Management_str/8.html">第８章 経営戦略<br></a>
-                <a href="./基本情報/C_and_L/9.html">第９章 企業と法務<br></a>
+                <h2 id="ap">応用情報技術者試験</h2>
             </article>
 
             <article>
-                <h1>応用情報技術者試験</h1>
+                <h2 id="en">英語</h1>
+            </article>
+
+            <article>
+                <h2 id="kr">韓国語</h1>
             </article>
 
         </main>
-        <footer>
-            フッター
-        </footer>
+        <foter class="fotter">
+            <div class="copy">
+                &copy;2023/02/24
+            </div>
+        </foter>
     </body>
 </html>
